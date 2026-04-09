@@ -21,6 +21,7 @@ app.set('view engine', 'ejs'); // Set EJS as the view engine for rendering templ
 
 app.get('/', (req, res)=> res.render('home'));
 app.get('/smoothies', (req, res)=> res.render('smoothies'))
+app.use(authRoutes)
 
 const port = process.env.PORT || 3000;
 
