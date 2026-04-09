@@ -15,3 +15,10 @@ const signup_post = (req, res)=> {
 const login_post = (req, res)=> {
     res.render('signup')
 }
+
+module.exports = {
+    signup_get,
+    login_get,
+    signup_post,
+    login_post
+}
