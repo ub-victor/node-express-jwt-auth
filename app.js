@@ -4,3 +4,6 @@ const mongoose = require('mongoose');
 
 const app = express() // Create an Express application
 
+// middleware
+
+app.use(express.static('public'))
