@@ -5,7 +5,7 @@ const signup_get = (req, res)=> {
 }
 
 const login_get = (req, res)=> {
-    res.render('signup')
+    res.render('login')
 }
 
 const signup_post = (req, res)=> {
