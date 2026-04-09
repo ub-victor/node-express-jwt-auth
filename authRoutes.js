@@ -1,4 +1,5 @@
 const {Router} = require('express');
+const {signup_get, login_get, signup_post, login_post} = require('./controllers/authController')
 
 const router = Router();
 
