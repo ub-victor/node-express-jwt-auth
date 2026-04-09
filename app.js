@@ -3,7 +3,7 @@ require('dotenv').config(); // Load environment variables from the .env file
 const express = require('express');
 const mongoose = require('mongoose');
 const connectDB = require('./db/connect')
-const authRoutes = require('./routes/authRoutes')
+const authRoutes = require('./routes/authRoutes');
 
 const app = express() // Create an Express application
 
