@@ -13,7 +13,7 @@ const signup_post = (req, res)=> {
 }
 
 const login_post = (req, res)=> {
-    res.render('signup')
+    res.send('signup')
 }
 
 module.exports = {
