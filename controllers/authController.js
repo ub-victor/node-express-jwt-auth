@@ -9,7 +9,7 @@ const login_get = (req, res)=> {
 }
 
 const signup_post = (req, res)=> {
-    res.render('signup')
+    res.send('signup')
 }
 
 const login_post = (req, res)=> {
