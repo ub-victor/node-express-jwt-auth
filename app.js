@@ -10,3 +10,4 @@ app.use(express.static('public')) // Serve static files from the 'public' direct
 app.use(express.json()) // Parse incoming JSON requests
 
 // view engine
+
