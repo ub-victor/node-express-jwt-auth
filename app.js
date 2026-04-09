@@ -16,6 +16,10 @@ app.use(express.json()) // Parse incoming JSON requests
 app.set('view engine', 'ejs'); // Set EJS as the view engine for rendering templates
 
 
+// routes
+
+app.get('/', (req, res)=> res.render('home'));
+
 const port = process.env.PORT || 3000;
 
 const start = async()=>{
