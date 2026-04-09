@@ -1,4 +1,5 @@
 // Import the Express and Mongoose libraries
+require('dotenv').config(); // Load environment variables from the .env file
 const express = require('express');
 const mongoose = require('mongoose');
 const connectDB = require('./db/connect')
@@ -12,7 +13,7 @@ app.use(express.json()) // Parse incoming JSON requests
 
 // view engine
 
-app.use('view engine', 'ejs'); // Set EJS as the view engine for rendering templates
+app.set('view engine', 'ejs'); // Set EJS as the view engine for rendering templates
 
 
 const port = process.env.PORT || 3000;
@@ -24,9 +25,10 @@ const start = async()=>{
             console.log(`Server is Running on port ${port}...`);
         })
 
-    }catch{
+    }catch(error){
+        console.log(error)
 
     }
 }
 
-start()
+start();
