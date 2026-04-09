@@ -13,8 +13,8 @@ const signup_post = (req, res)=> {
 }
 
 const login_post = (req, res)=> {
-    console.log(req.body);
-    res.send('signup')
+    const{email, password} = req.body;
+    res.send('signup');
     
 }
 
