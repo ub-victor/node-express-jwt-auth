@@ -14,6 +14,7 @@ const signup_post = (req, res)=> {
 
 const login_post = (req, res)=> {
     res.send('signup')
+    console.log(req.body);
 }
 
 module.exports = {
