@@ -6,4 +6,7 @@ const app = express() // Create an Express application
 
 // middleware
 
-app.use(express.static('public'))
+app.use(express.static('public')) // Serve static files from the 'public' directory
+app.use(express.json()) // Parse incoming JSON requests
+
+// view engine
