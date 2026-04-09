@@ -11,3 +11,4 @@ app.use(express.json()) // Parse incoming JSON requests
 
 // view engine
 
+app.use('view engine', 'ejs'); // Set EJS as the view engine for rendering templates
