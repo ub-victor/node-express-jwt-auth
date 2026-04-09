@@ -9,6 +9,8 @@ const login_get = (req, res)=> {
 }
 
 const signup_post = (req, res)=> {
+    const{email, password} = req.body;
+    console.log(email, password);
     res.send('signup')
 }
 
