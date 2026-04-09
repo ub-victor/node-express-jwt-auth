@@ -16,3 +16,13 @@ app.use('view engine', 'ejs'); // Set EJS as the view engine for rendering templ
 
 
 const port = process.env.PORT || 3000;
+
+const start = async()=>{
+    try{
+
+    }catch{
+
+    }
+}
+
+start()
