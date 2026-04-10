@@ -16,10 +16,6 @@ const signup_post = async (req, res)=> {
             const user =  User.create({email, password});
             res.status(2001).json(user);
         }
-        
-        
-        
-
     }
     catch(error){
         console.log(error)
