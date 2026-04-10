@@ -12,7 +12,7 @@ const login_get = (req, res)=> {
 const signup_post = async (req, res)=> {
     const {email, password} = req.body;
     try {
-        const user =  User.create({email, password});
+        const user =  User.create({email, password}); 
 
     }
     catch(error){
