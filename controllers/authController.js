@@ -13,10 +13,10 @@ const signup_post = async (req, res)=> {
     const {email, password} = req.body;
     try {
         if(!email || !password){
-            return             
+            return res.status(400).send("email and password are required")            
         }
-        const user =  User.create({email, password});
-        res.status(201).json(user);
+        const user =  await User.create({email, password});
+        res.status(200).json(user);
     }
     catch(error){
         console.log(error)
