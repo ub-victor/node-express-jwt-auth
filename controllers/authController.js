@@ -17,7 +17,7 @@ const signup_post = async (req, res)=> {
     }
     catch(error){
         console.log(error)
-        res.status(400)
+        res.status(400).send('error, user not created')
     }
 }
 
