@@ -8,6 +8,9 @@ const handleErrors = (err)=>{
     let errors = {email: '', password: ''};
 
     // duplicate email error
+    if(err.code === 11000){
+        
+    }
 }
 
 const signup_get = (req, res)=> {
