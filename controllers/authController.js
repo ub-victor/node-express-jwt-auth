@@ -6,8 +6,9 @@ const User = require('../models/User');
 const handleErrors = (err)=>{
     console.log(err.message, err.code)
     let errors = {email: '', password: ''};
+
+    
 }
-if (err.message)
 
 const signup_get = (req, res)=> {
     res.render('signup')
