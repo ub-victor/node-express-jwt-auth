@@ -13,7 +13,7 @@ const signup_post = async (req, res)=> {
     const {email, password} = req.body;
     try {
         if(!email || !password){
-            
+            return             
         }
         const user =  User.create({email, password});
         res.status(201).json(user);
