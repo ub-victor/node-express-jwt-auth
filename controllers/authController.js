@@ -1,4 +1,5 @@
 // controller actions
+const User = require('../models/User')
 
 const signup_get = (req, res)=> {
     res.render('signup')
