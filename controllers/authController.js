@@ -16,7 +16,7 @@ const signup_post = async (req, res)=> {
             return res.status(400).send("email and password are required")            
         }
         const user =  await User.create({email, password});
-        res.status(200).json(user);
+        res.status(201).json(user);
     }
     catch(error){
         console.log(error)
