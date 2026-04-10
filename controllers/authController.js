@@ -3,7 +3,10 @@ const User = require('../models/User');
 
 
 // handle errors
-const handle
+const handleErrors = (err)=>{
+    console.log(err.message, err.code)
+    let errors = {email: '', password: ''};
+}
 if (err.message)
 
 const signup_get = (req, res)=> {
