@@ -13,7 +13,7 @@ const signup_post = async (req, res)=> {
     const {email, password} = req.body;
     try {
         const user =  User.create({email, password});
-        res.status(200).json(user);
+        res.status(2001.json(user);
 
     }
     catch(error){
