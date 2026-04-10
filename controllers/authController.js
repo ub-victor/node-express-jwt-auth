@@ -17,8 +17,9 @@ const handleErrors = (err)=>{
     if (err.message.includes('user validation failed')){
         Object.values(err.error).forEach(({properties})=>{
             errors[properties.path] = properties.message;
-        })
+        });
     }
+    return errors;
 }
 
 const signup_get = (req, res)=> {
