@@ -11,6 +11,7 @@ const login_get = (req, res)=> {
 
 const signup_post = (req, res)=> {
     try {
+        User.create({email, password})
 
     }
     catch(error){
