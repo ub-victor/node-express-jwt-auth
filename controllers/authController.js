@@ -1,6 +1,5 @@
 // controller actions
 const User = require('../models/User');
-const {isEmail} = require('validator');
 
 const signup_get = (req, res)=> {
     res.render('signup')
