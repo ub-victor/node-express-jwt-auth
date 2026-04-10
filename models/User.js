@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const { type } = require('os')
+const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
     email:{
@@ -13,4 +12,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         minLength: 6
     }
-})
+});
+
+
+const User = mongoose.model('user', userSchema);
