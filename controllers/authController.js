@@ -9,7 +9,8 @@ const login_get = (req, res)=> {
     res.render('login')
 }
 
-const signup_post = (req, res)=> {
+const signup_post = async (req, res)=> {
+    const {email, password} = req.body;
     try {
         User.create({email, password})
 
@@ -19,7 +20,7 @@ const signup_post = (req, res)=> {
     }
 }
 
-const login_post = (req, res)=> {
+const login_post = async (req, res)=> {
     const{email, password} = req.body;
     console.log(email, password);
     res.send('signup');
