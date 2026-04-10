@@ -7,7 +7,7 @@ const handleErrors = (err)=>{
     console.log(err.message, err.code)
     let errors = {email: '', password: ''};
 
-    
+    // duplicate email error
 }
 
 const signup_get = (req, res)=> {
