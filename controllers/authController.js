@@ -12,6 +12,13 @@ const handleErrors = (err)=>{
         errors.email = 'That email is already registered';
         return errors;
     }
+
+    // validation errors
+    if (err.message.includes('user validation failed')){
+        Object.values(err.error).forEach(({properties})=>{
+            errors[properties.path] = properties.message;
+        })
+    }
 }
 
 const signup_get = (req, res)=> {
