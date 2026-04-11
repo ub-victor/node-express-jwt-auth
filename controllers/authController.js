@@ -26,7 +26,15 @@ const handleErrors = (err)=>{
 
     // validation errors
     /**
-     * 
+     * This block checks if the error message includes the string 'user validation failed',
+     * which indicates that there were validation errors when trying to create a user.
+     * If this condition is true, it iterates over the values of the err.error object,
+     * which contains details about the validation errors. For each error, it extracts
+     * the properties of the error and assigns the corresponding error message to the
+     * appropriate field in the errors object based on the path property. Finally, it
+     * returns the errors object, which now contains specific error messages for each
+     * field that failed validation. This allows the application to provide detailed
+     * feedback to the user about what went wrong during the registration process.
      */
     if (err.message.includes('user validation failed')){
         Object.values(err.error).forEach(({properties})=>{
