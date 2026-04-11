@@ -11,7 +11,7 @@ const handleErrors = (err)=>{
     if(err.code === 11000){
         errors.email = 'That email is already registered';
         return errors;
-    }
+    } 
 
     // validation errors
     if (err.message.includes('user validation failed')){
