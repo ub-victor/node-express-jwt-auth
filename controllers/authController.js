@@ -4,7 +4,7 @@ const User = require('../models/User');
 
 // handle errors
 const handleErrors = (err)=>{ 
-    console.log(err.message, err.code);
+    console.log(err.message, err.code); // this log outs the error message and code to the console for debugging purposes
     let errors = {email: '', password: ''}; 
 
     // duplicate email error
