@@ -17,6 +17,7 @@ const handleErrors = (err)=>{
      *  is already registered and returns the errors object. 
      * This allows the application to inform the user about
      *  the specific issue with their registration attempt.
+     * which mean in the empty error object, the email field will be populated with the message 'That email is already registered' if a duplicate email error occurs but the password field remains empty.
      */
     if(err.code === 11000){
         errors.email = 'That email is already registered';
