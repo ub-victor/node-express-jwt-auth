@@ -10,7 +10,9 @@ const handleErrors = (err)=>{
     // duplicate email error
     /**
      * This block checks if the error code is 11000,
-     * which is a common code for duplicate key errors in MongoDB. If this error occurs, it means that the email being registered already exists in the database. The code then sets the email property of the errors object to a message indicating that the email is already registered and returns the errors object. This allows the application to inform the user about the specific issue with their registration attempt.
+     * which is a common code for duplicate key errors in MongoDB.
+     *  If this error occurs, it means that the email being registered
+     *  already exists in the database. The code then sets the email property of the errors object to a message indicating that the email is already registered and returns the errors object. This allows the application to inform the user about the specific issue with their registration attempt.
      */
     if(err.code === 11000){
         errors.email = 'That email is already registered';
