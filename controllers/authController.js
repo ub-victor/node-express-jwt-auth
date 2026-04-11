@@ -4,8 +4,8 @@ const User = require('../models/User');
 
 // handle errors
 const handleErrors = (err)=>{
-    console.log(err.message, err.code)// this log out the error msg and the code the error gave
-    let errors = {email: '', password: ''};
+    console.log(err.message, err.code)
+    let errors = {email: '', password: ''}; 
 
     // duplicate email error
     if(err.code === 11000){
